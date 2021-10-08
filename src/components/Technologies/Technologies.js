@@ -41,7 +41,7 @@ const Technologies = () => (
         </ListContainer>
         <ListParagraph>
           Experience with <br />
-          React.js
+          Node and Databases
         </ListParagraph>
       </ListItem>
     </List>
