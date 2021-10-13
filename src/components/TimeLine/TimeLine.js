@@ -25,9 +25,9 @@ const Timeline = () => {
   const [activeItem, setActiveItem] = useState(0);
   const carouselRef = useRef();
 
-  // const scroll = (node, left) => {
-  //   return node.scrollTo({ left, behavior: 'smooth' });
-  // }
+  const scroll = (node, left) => {
+    return node.scrollTo({ left, behavior: "smooth" });
+  };
 
   const handleClick = (e, i) => {
     e.preventDefault();
@@ -41,29 +41,33 @@ const Timeline = () => {
     }
   };
 
-  // const handleScroll = () => {
-  //   if (carouselRef.current) {
-  //     const index = Math.round((carouselRef.current.scrollLeft / (carouselRef.current.scrollWidth * 0.7)) * TimeLineData.length);
+  const handleScroll = () => {
+    if (carouselRef.current) {
+      const index = Math.round(
+        (carouselRef.current.scrollLeft /
+          (carouselRef.current.scrollWidth * 0.7)) *
+          TimeLineData.length
+      );
 
-  //     setActiveItem(index);
-  //   }
-  // }
+      setActiveItem(index);
+    }
+  };
 
-  // // snap back to beginning of scroll when window is resized
-  // // avoids a bug where content is covered up if coming from smaller screen
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     scroll(carouselRef.current, 0);
-  //   }
+  // snap back to beginning of scroll when window is resized
+  // avoids a bug where content is covered up if coming from smaller screen
+  useEffect(() => {
+    const handleResize = () => {
+      scroll(carouselRef.current, 0);
+    };
 
-  //   window.addEventListener('resize', handleResize);
-  // }, []);
+    window.addEventListener("resize", handleResize);
+  }, []);
 
   return (
     <Section>
       <SectionTitle> About Me</SectionTitle>
       <SectionText>about me txt yada yada yada</SectionText>
-      <CarouselContainer ref={carouselRef}>
+      <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
             <CarouselMobileScrollNode
@@ -77,11 +81,26 @@ const Timeline = () => {
                 onClick={(e) => handleClick(e, index)}
               >
                 <CarouselItemTitle>{item.year}</CarouselItemTitle>
+                <CarouselItemText>{item.text}</CarouselItemText>
               </CarouselItem>
             </CarouselMobileScrollNode>
           ))}
         </>
       </CarouselContainer>
+      <CarouselButtons>
+        {TimeLineData.map((item, index) => (
+          <CarouselButton
+            key={index}
+            index={index}
+            active={activeItem}
+            onClick={(e) => handleClick(e, index)}
+            type="button"
+          >
+            <CarouselButtonDot active={activeItem} />
+          </CarouselButton>
+        ))}
+      </CarouselButtons>
+      <SectionDivider></SectionDivider>
     </Section>
   );
 };

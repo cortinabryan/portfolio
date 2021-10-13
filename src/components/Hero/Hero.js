@@ -16,9 +16,8 @@ const Hero = (props) => (
         My Personal Portfolio
       </SectionTitle>
       <SectionText>
-        Add text over here. What will i offer and what will i build? - Lorem
-        ipsum dolor sit amet consectetur, adipisicing elit. Veritatis qui sint
-        nulla impedit laboriosam!
+        I am a self-taught web developer. with 2-3 years of experience. Ive
+        built 5+ personal projects
       </SectionText>
       <Button onClick={() => (window.location = "https://google.com")}>
         Learn More
