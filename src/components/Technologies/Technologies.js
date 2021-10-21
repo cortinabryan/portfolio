@@ -20,10 +20,11 @@ const Technologies = () => (
     <br />
     <SectionTitle>Technologies</SectionTitle>
 
+    {/*
     <SectionText>
       Ive worked with a range a technologies in the web development world.
-      Mostly Front-End
-    </SectionText>
+      Mostly Front-End Development
+    </SectionText> */}
     <List>
       <ListItem>
         <DiFirebase size="3rem" />

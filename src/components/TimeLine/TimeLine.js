@@ -18,6 +18,7 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { TimeLineData } from "../../constants/constants";
+import { is } from "./../../../.next/static/chunks/main";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -64,9 +65,14 @@ const Timeline = () => {
   }, []);
 
   return (
-    <Section>
+    <Section id="about">
       <SectionTitle> About Me</SectionTitle>
-      <SectionText>about me txt yada yada yada</SectionText>
+      <SectionText>
+        I was introduce to code when i was working as a wordpress developer. I
+        was encouraged to take online courses about HTML and CSS so i
+        would&apos;ve had a better understanding of how the web is structured.
+        From there i continued learning Javascript and other Front-End
+      </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (

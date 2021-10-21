@@ -18,13 +18,15 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <LinkList>
-        <LinkColumn>
-          <LinkTitle>Call</LinkTitle>
+        {/* <LinkColumn>
+          <LinkTitle>Call/Voicemail</LinkTitle>
           <LinkItem href="tel:702-000-0000">702-123-4123</LinkItem>
-        </LinkColumn>
+        </LinkColumn> */}
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
-          <LinkItem href="mailto:myemail@gmail.com">myemail@gmail.com</LinkItem>
+          <LinkItem href="mailto:myemail@gmail.com">
+            cortinabryan@gmail.com
+          </LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
@@ -32,10 +34,13 @@ const Footer = () => {
           <Slogan>It doesnt matter where you start, as long as you do</Slogan>
         </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com">
+          <SocialIcons href="https://github.com/cortinabryan" target="_blank">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://linkedin.com">
+          <SocialIcons
+            href="https://www.linkedin.com/in/bryancortina/"
+            target="_blank"
+          >
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
         </SocialContainer>
