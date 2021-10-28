@@ -18,7 +18,6 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { TimeLineData } from "../../constants/constants";
-import { is } from "./../../../.next/static/chunks/main";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
