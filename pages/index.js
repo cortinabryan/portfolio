@@ -1,6 +1,7 @@
 import Acomplishments from "../src/components/Acomplishments/Acomplishments";
 import BgAnimation from "../src/components/BackgrooundAnimation/BackgroundAnimation";
 import Hero from "../src/components/Hero/Hero";
+import HeroPhoto from "../src/components/HeroPhoto/HeroPhoto";
 import Projects from "../src/components/Projects/Projects";
 import Technologies from "../src/components/Technologies/Technologies";
 import Timeline from "../src/components/TimeLine/TimeLine";

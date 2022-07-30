@@ -1,5 +1,15 @@
 export const projects = [
   {
+    title: "Martial-Arts Check-in",
+    description:
+      "Using Vanilla HTML, CSS and Javascript. I decided to create a Martial-arts Check-in App. The concept is similar to a commercial gym check-in app but the main difference is in martial arts we have belts that represents your rank. I've decided it would be a great idea if i can create an app where you can just easily check-in and it also keeps track of your hours so you and your instructors will get notified if when you're due for a promotion",
+    image: "/images/class-sched.png",
+    tags: ["HTML", "CSS", "Javascript"],
+    source: "https://github.com/cortinabryan/Martial-Arts-Check-In-App",
+    visit: "https://martial-arts-check-in-app.vercel.app/index.html",
+    id: 0,
+  },
+  {
     title: "Taz Bulldogs",
     description:
       "Using React, Node.js, Styled Components. I created this dog-breeder website for a coworker of mine. This is my first React Project",
@@ -7,7 +17,7 @@ export const projects = [
     tags: ["React", "Node.js", "EmailJS"],
     source: "https://github.com/cortinabryan/Taz-Bulldogs",
     visit: "https://taz-bulldogs.netlify.app/",
-    id: 0,
+    id: 1,
   },
   {
     title: "The Gentle Art of Brazilian Jiu Jitsu",
@@ -17,7 +27,7 @@ export const projects = [
     tags: ["HTML", "CSS", "Grid"],
     source: "https://github.com/cortinabryan/BJJ-Website",
     visit: "https://jiujitsu.netlify.app/",
-    id: 1,
+    id: 2,
   },
   {
     title: "Fight Gear",
@@ -27,7 +37,7 @@ export const projects = [
     tags: ["HTML", "CSS", "Flexbox"],
     source: "https://github.com/cortinabryan/Fight-Gear-Website",
     visit: "https://fight-gear.netlify.app/",
-    id: 2,
+    id: 3,
   },
   {
     title: "Flooble",
@@ -37,7 +47,7 @@ export const projects = [
     tags: ["HTML", "CSS", "Grid", "Flexbox"],
     source: "https://github.com/cortinabryan/flooble",
     visit: "https://flooble.netlify.app/",
-    id: 3,
+    id: 4,
   },
 ];
 
