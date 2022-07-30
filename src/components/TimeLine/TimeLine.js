@@ -71,6 +71,7 @@ const Timeline = () => {
         was encouraged to take online courses about HTML and CSS so i
         would&apos;ve had a better understanding of how the web is structured.
         From there i continued learning Javascript and other Front-End
+        Technologies
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
