@@ -24,7 +24,7 @@ const Hero = (props) => (
         Web Portfolio
       </SectionTitle>
       <SectionText>
-        I am a self-taught web developer. with 2-3 years of experience. Ive
+        I am a self-taught web developer with 2-3 years of experience. I&apos;ve
         built 5+ personal projects.
       </SectionText>
       <Button
